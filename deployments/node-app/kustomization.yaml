@@ -1,0 +1,16 @@
+namespace: node-app
+# commonLabels:
+#   app: node-app
+resources:
+  - ../../../base/apps/be
+  - ../../../base/apps/fe
+  - be-ingress.yaml
+  - fe-ingress.yaml
+# patchesStrategicMerge:
+#   - be-deploy.yaml
+#   - fe-deploy.yaml
+images:
+  - name: <back-end>
+    newTag: a1234567890
+  - name: <front-end>
+    newTag: a1234567890

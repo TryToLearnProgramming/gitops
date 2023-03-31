@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: node-app
+  namespace: argocd
+spec:
+  project: node-full
+  source:
+    repoURL: '<repo_url>'
+    path: deployments/node-app
+    targetRevision: k-argo
+    directory:
+      recurse: false
+      jsonnet: {}
+  destination:
+    namespace: node-app
+    name: k8s-app
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+    syncOptions:
+      - createNamespace=true
