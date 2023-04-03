@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: <Image>
+        image: sami203/e-commerce-front-end
         resources:
           requests:
             memory: "50Mi"
