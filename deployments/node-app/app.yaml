@@ -4,7 +4,7 @@ metadata:
   name: node-app
   namespace: argocd
 spec:
-  project: node-full
+  project: default
   source:
     repoURL: https://github.com/TryToLearnProgramming/gitops
     path: deployments/node-app
