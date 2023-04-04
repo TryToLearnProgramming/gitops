@@ -15,9 +15,11 @@ spec:
   destination:
     namespace: node-app
     server: 'https://kubernetes.default.svc'
+    # name: cluster_name
   syncPolicy:
     automated:
       prune: true
       allowEmpty: true
     syncOptions:
-      - createNamespace: true
+      - PruneLast=true
+      - createNamespace=true
