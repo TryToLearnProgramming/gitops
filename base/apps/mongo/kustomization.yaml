@@ -3,3 +3,4 @@ resources:
   - service.yaml
   - pv.yaml
   - pvc.yaml
+  - secrets.yaml
