@@ -1,3 +1,5 @@
 resources:
   - deploy.yaml
   - service.yaml
+  - pv.yaml
+  - pvc.yaml
