@@ -17,11 +17,6 @@ spec:
         image: mongo:4.4.6
         ports:
         - containerPort: 27017
-        env:
-        - name: MONGO_INITDB_ROOT_USERNAME
-          value: admin
-        - name: MONGO_INITIDB_ROOT_PASSWORD
-          value: '123456'
         volumeMounts:
           - name: mongo-volume
             mountPath: /data/
