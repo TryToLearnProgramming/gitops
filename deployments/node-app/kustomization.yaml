@@ -4,6 +4,7 @@ namespace: node-app
 resources:
   - ../../base/apps/be
   - ../../base/apps/fe
+  - ../../base/apps/mongo
   - be-ingress.yaml
   - fe-ingress.yaml
 patchesStrategicMerge:
