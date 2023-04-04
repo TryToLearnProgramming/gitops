@@ -20,4 +20,4 @@ spec:
       prune: true
       allowEmpty: true
     syncOptions:
-      - createNamespace=true
+      - createNamespace: true
