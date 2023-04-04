@@ -6,9 +6,9 @@ resources:
   - ../../base/apps/fe
   - be-ingress.yaml
   - fe-ingress.yaml
-# patchesStrategicMerge:
-#   - be-deploy.yaml
-#   - fe-deploy.yaml
+patchesStrategicMerge:
+  - be-deploy.yaml
+  - fe-deploy.yaml
 images:
   - name: sami203/e-commerce-front-end
     newTag: 89695ad8fcf11de20052f0afbd5f4d7ff847e7cd
