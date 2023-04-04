@@ -21,7 +21,8 @@ spec:
         - name: back-end
           image: sami203/e-commerce-back-end
           env:
-            - DATABASE=mongodb://mongo-db/e-commerce
+            - name: DATABASE
+              value: mongodb://mongo-db/e-commerce
           resources:
             requests:
               cpu: "50m"
