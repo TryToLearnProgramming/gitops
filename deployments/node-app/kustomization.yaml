@@ -11,6 +11,6 @@ resources:
 #   - fe-deploy.yaml
 images:
   - name: sami203/e-commerce-front-end
-    newTag: a1234567890
+    newTag: dce9a22ab604051aeae3e10dc276bf02a064d4ca
   - name: sami203/e-commerce-back-end
     newTag: a1234567890
