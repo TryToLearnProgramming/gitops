@@ -14,7 +14,7 @@ spec:
       jsonnet: {}
   destination:
     namespace: node-app
-    name: k8s-app
+    server: 'https://kubernetes.default.svc'
   syncPolicy:
     automated:
       prune: true
