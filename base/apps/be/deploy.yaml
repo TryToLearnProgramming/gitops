@@ -22,10 +22,7 @@ spec:
           image: sami203/e-commerce-back-end
           env:
             - name: DATABASE
-              valueFrom:
-                configMapKeyRef:
-                  name: be-cm
-                  key: DATABASE
+              value: mongodb://admin:password@mongodb-svc/e-commerce
           resources:
             requests:
               cpu: "50m"
