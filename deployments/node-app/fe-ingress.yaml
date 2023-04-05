@@ -6,7 +6,7 @@ metadata:
     name: front-end
 spec:
   rules:
-  - host: app.com
+  - host: node.url
     http:
       paths:
       - pathType: Prefix
