@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongo-db
+  name: mongodb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongo-db
+      app: mongodb
   template:
     metadata:
       labels:
-        app: mongo-db
+        app: mongodb
     spec:
       containers:
-      - name: mongo-db
+      - name: mongodb
         image: mongo:4.4.6
         ports:
         - containerPort: 27017
@@ -21,12 +21,12 @@ spec:
           - name: MONGO_INITDB_ROOT_USERNAME
             valueFrom:
               secretKeyRef:
-                name: mongo-sectets
+                name: mongo-sec
                 key: username
           - name: MONGO_INITDB_ROOT_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: mongo-sectets
+                name: mongo-sec
                 key: password
         volumeMounts:
           - name: mongo-volume

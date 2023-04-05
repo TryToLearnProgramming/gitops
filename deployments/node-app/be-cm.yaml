@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: be-cm
 data:
-  DATABASE: mongo-db
+  DATABASE: mongodb-svc
