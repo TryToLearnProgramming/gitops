@@ -5,7 +5,7 @@ metadata:
   labels:
     app: front-end
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: front-end
   ports:
