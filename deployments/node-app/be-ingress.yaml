@@ -18,3 +18,8 @@ spec:
             name: back-end-svc
             port: 
               number: 80
+status:
+  loadBalancer:
+    ingress:
+      - hostname: >-
+          af88b7ae29bac4abc8c827a388ead378-447165983dc868b0.elb.ap-northeast-1.amazonaws.com
