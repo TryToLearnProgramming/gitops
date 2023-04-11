@@ -6,7 +6,7 @@ metadata:
     name: front-end
 spec:
   rules:
-  - host: node.url
+  - host: node.track-progress.com
     http:
       paths:
       - pathType: Prefix

@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/class: nginx
 spec:
   rules:
-  - host: back.node.url
+  - host: back.node.track-progress.com
     http:
       paths:
       - pathType: Prefix
