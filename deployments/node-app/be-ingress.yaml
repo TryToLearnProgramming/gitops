@@ -17,4 +17,4 @@ spec:
           service:
             name: back-end-svc
             port: 
-              name: back-end-svc
+              number: 80
