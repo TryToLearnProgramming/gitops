@@ -17,4 +17,4 @@ spec:
           service:
             name: front-end-svc
             port: 
-              name: front-end-svc
+              number: 80
