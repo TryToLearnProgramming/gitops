@@ -8,7 +8,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: back.node.url
+  - host: api.showyrskills.in
     http:
       paths:
       - pathType: Prefix
